@@ -4,9 +4,20 @@ html {
   padding: 0;
 }
 
+h1,
+p {
+  margin: 0;
+}
+
+input {
+  background: none;
+  outline: none;
+  border: none;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 * {
@@ -17,4 +28,144 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.header {
+  width: 100%;
+  background-color: #262626;
+  color: #939aa0;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+}
+
+.content {
+  display: flex;
+  padding: 20px 30px;
+}
+
+.aside {
+  width: 200px;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+
+.about {
+  padding: 20px;
+
+  background-color: #f8f9fa;
+}
+
+.archives {
+  padding: 20px;
+}
+
+.main {
+  display: flex;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 660px;
+  width: 860px;
+  margin-right: 20px;
+}
+
+.item {
+  width: 420px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 1px 10px 1px #e8e8e8;
+}
+
+.item-picture {
+  width: 420px;
+  height: 150px;
+}
+
+.article {
+  border: 1px solid #f8f9fa;
+  padding: 20px;
+}
+
+.articel-description {
+  margin: 10px 0;
+}
+
+.article-detail {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.sign-in {
+  display: flex;
+  align-items: center;
+}
+
+.sign-in-form {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  padding: 20px;
+  border-radius: 5px;
+  width: 270px;
+  background-color: #f8f9fa;
+}
+
+.email {
+  border: 1px solid #e8e8e8;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom: 0;
+  height: 40px;
+  padding-left: 10px;
+  background-color: #fff;
+}
+
+.password {
+  border: 1px solid #e8e8e8;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  height: 40px;
+  padding-left: 10px;
+  background-color: #fff;
+}
+
+.checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+
+.submit {
+  height: 40px;
+  border: 0;
+  outline: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.footer {
+  border-top: 1px solid #e8e8e8;
+  background-color: #f8f9fa;
+  position: absolute;
+  bottom: 0;
+  height: 80px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
